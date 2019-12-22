@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+#inner-results{
+    max-width: 70%;
+}
+
+.result{
+    padding: 15px;
+    display: flex;
+    border: 1px solid blue;
+}
+
+.result .thumbnail{
+    float: left;
+    border: 1px solid black;
+}
+
+.result a{
+    color: black;
+    text-decoration: none;
+}
+
+.result a:visited{
+    color: black;
+}
