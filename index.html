@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <title>ML proyect</title>
 </head>
+
 <body>
-    <input type="text" id="search" autocomplete="off">
-    <button type="submit" onclick="getSearchResults()">Buscar</button>
-    <div id="inner-results"></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="/ML-proyect/script.js"></script>
+    <div class="content">
+        <nav>
+            <a class="nav-logo" href="index.html"><img
+                    src="/ML-proyect/images/desktop-nav-logo.png"></a>
+            <input type="text" id="search" autocomplete="off" placeholder="Buscar productos, marcas y más...">
+            <button type="submit" id="btn-search" class="nav-icon-search" onclick="getSearchResults()"><i
+                    class="fal fa-search"></i></button>
+            <a href="https://www.mercadolibre.com.ar/mercado-credito/cuotas-sin-tarjeta/" target="_blank"><img
+                    class="nav-img-mc" src="/ML-proyect/images/desktop-nav-mercado_credito.png"></a>
+        </nav>
+        <div id="inner-results"></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="/ML-proyect/script.js"></script>
+    </div>
 </body>
+
 </html>
