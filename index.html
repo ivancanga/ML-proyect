@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/ML-proyect/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.10/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -12,20 +13,34 @@
 </head>
 
 <body>
-    <div class="content">
-        <nav>
-            <a class="nav-logo" href="index.html"><img
-                    src="/ML-proyect/images/desktop-nav-logo.png"></a>
+    <header>
+        <nav class="content">
+            <a class="nav-logo" href="index.html"><img src="/ML-proyect/images/desktop-nav-logo.png"></a>
             <input type="text" id="search" autocomplete="off" placeholder="Buscar productos, marcas y más...">
             <button type="submit" id="btn-search" class="nav-icon-search" onclick="getSearchResults()"><i
                     class="fal fa-search"></i></button>
-            <a href="https://www.mercadolibre.com.ar/mercado-credito/cuotas-sin-tarjeta/" target="_blank"><img
-                    class="nav-img-mc" src="/ML-proyect/images/desktop-nav-mercado_credito.png"></a>
+            <a href="https://www.mercadolibre.com.ar/mercado-credito/cuotas-sin-tarjeta/" target="_blank">
+                <img class="nav-img-mc" src="/ML-proyect/images/desktop-nav-mercado_credito.png">
+            </a>
         </nav>
+        <div class="nav-lists content">
+            <ul class="nav-list">
+                <li>Categorias</li>
+                <li>Ofertas</li>
+                <li>Historial</li>
+                <li>Tiendas oficiales</li>
+                <li>Vender</li>
+                <li>Ayuda</li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="content">
         <div id="inner-results"></div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="/ML-proyect/script.js"></script>
-    </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/ML-proyect/script.js"></script>
+
 </body>
 
 </html>

@@ -10,10 +10,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+header{
+    background-color: #fff159;
+}
+
 nav {
     justify-content: center;
     padding: 8px 20px;
-    background-color: #fff159;
+
     display: flex;
 }
 
@@ -60,6 +64,13 @@ nav {
     padding: 5px 15px;
     font-size: 0.9rem;
     border-left: 1px solid #e6e6e6;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    font-size: 0.8rem;
+    padding: 15px 0;
 }
 
 #inner-results {
