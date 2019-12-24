@@ -16,15 +16,15 @@
     <header>
         <nav class="content">
             <a class="nav-logo" href="index.html"><img src="/ML-proyect/images/desktop-nav-logo.png"></a>
-            <input type="text" id="search" autocomplete="off" placeholder="Buscar productos, marcas y más...">
-            <button type="submit" id="btn-search" class="nav-icon-search" onclick="getSearchResults()"><i
-                    class="fal fa-search"></i></button>
+            <div class="search-bar"><input type="text" id="search" autocomplete="off"
+                    placeholder="Buscar productos, marcas y más...">
+                <button type="submit" id="btn-search" class="nav-icon-search" onclick="getSearchResults()"><i
+                        class="fal fa-search"></i></button></div>
             <a href="https://www.mercadolibre.com.ar/mercado-credito/cuotas-sin-tarjeta/" target="_blank">
                 <img class="nav-img-mc" src="/ML-proyect/images/desktop-nav-mercado_credito.png">
             </a>
-        </nav>
-        <div class="nav-lists content">
-            <ul class="nav-list">
+            <div></div>
+            <ul class="nav-list category">
                 <li>Categorias</li>
                 <li>Ofertas</li>
                 <li>Historial</li>
@@ -32,7 +32,12 @@
                 <li>Vender</li>
                 <li>Ayuda</li>
             </ul>
-        </div>
+            <ul class="nav-list user">
+                <li>Crea tu cuenta</li>
+                <li>Ingresa</li>
+                <li>Mis compras</li>
+            </ul>
+        </nav>
     </header>
 
     <main class="content">
