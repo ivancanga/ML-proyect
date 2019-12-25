@@ -17,10 +17,12 @@ header{
 nav {
     display: grid;
     grid-template-columns: 0.5fr 2fr 1fr;
-    grid-template-rows: 1.5fr 0.5fr;
+    grid-template-rows: 1fr 0.5fr;
+    row-gap: 14px;
     justify-content: center;
-    padding: 8px 20px;
-    border: 1px solid red;
+    padding: 8px 20px 0 20px;
+    font-size: 0.8rem;
+    color: #333;
 }
 
 .nav-logo {
@@ -69,19 +71,64 @@ nav {
     border-left: 1px solid #e6e6e6;
 }
 
+.fa-map-marker-alt{
+    font-size: 1.3rem;
+    float: left;
+    margin-right: 5px;
+    margin-top: 6px;
+}
+
+.nav-cp{
+    align-self: center;
+    margin-top: -18px;
+    width: 135px;
+    border: 1px solid transparent;
+    padding: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-cp:hover{
+    border: 1px solid #bfbfbf7a;
+    border-radius: 0.25rem;
+}
+
+.nav-send{
+    color: #686868;
+    font-size: 0.7rem;
+}
+
 .nav-list{
     display: flex;
     list-style: none;
-    font-size: 0.8rem;
     padding: 10px 0;
 }
 
-.nav-list li{
+.nav-list li:not(:last-child){
     padding-right: 20px;
 }
 
-.category{
+.fa-shopping-cart{
+    font-size: 1rem;
+}
 
+.category{
+    color: rgba(51,51,51,.6);
+    position: relative;
+}
+
+.nav-link-tag{
+    top: 0%;
+    transform: translate(-110%);
+    position: absolute;
+    color: #fff;
+    background-color: #3483fa;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 8px;
+    font-weight: bold;
+    padding: 0 3px;
 }
 
 .user{
